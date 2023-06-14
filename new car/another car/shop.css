@@ -1,0 +1,143 @@
+.parent-shop {
+  display: grid;
+  grid-template-columns: repeat(4, 250px);
+  gap: 30px;
+  justify-content: center;
+}
+.arm-rest {
+  border: 2px solid #012057;
+  border-radius: 6px;
+}
+.details {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  gap: 10px;
+}
+.price-quantity {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  font-size: 18px;
+}
+.bi-dash-lg {
+  color: red;
+  cursor: pointer;
+}
+.bi-plus-lg {
+  color: green;
+  cursor: pointer;
+}
+.arm-rest:hover {
+  transform: scale(1.05);
+  transition-duration: 0.5s;
+}
+
+@media screen and (max-width: 768px) {
+  .parent-shop {
+    grid-template-columns: repeat(2, 250px);
+  }
+}
+@media screen and (max-width: 576px) {
+  .parent-shop {
+    grid-template-columns: repeat(1, 250px);
+  }
+}
+.text-center {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.Home-btn,
+.checkout-td,
+.removeAll {
+  background-color: #212529;
+  color: white;
+  border: none;
+  padding: 6px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.bi-x-lg {
+  color: red;
+  font-weight: bold;
+  cursor: pointer;
+}
+.shopping-cart-td {
+  display: grid;
+  grid-template-columns: repeat(1, 400px);
+  justify-content: center;
+  gap: 15px;
+}
+.cart-item {
+  border: 2px solid black;
+  border-radius: 10px;
+  display: flex;
+}
+.title-price-x {
+  width: 255px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 5px;
+}
+.title-price-td {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.cart-item-price {
+  background-color: #212529;
+  color: white;
+  padding: 3px 6px;
+  border-radius: 4px;
+}
+.checkoutpop {
+  background: lightblue;
+  height: 360px;
+  width: 400px;
+  border-radius: 15px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.1);
+  text-align: center;
+  padding: 0 30px 30px;
+  color: #333;
+  visibility: hidden;
+  transition: transform 0.4s, top 0.4s;
+}
+.checkoutpop-open {
+  visibility: visible;
+  top: 50%;
+  transform: translate(-50%, -50%) scale(1);
+}
+.pop-ad {
+  border: #012057 1px solid;
+  height: 30px;
+  width: 200px;
+  display: block;
+  border-radius: 10px;
+  margin: 6px 80px;
+  text-indent: 15px;
+}
+#pop-ad {
+  margin-top: 50px;
+}
+#sub-pop-btn {
+  display: block;
+  margin-left: 110px;
+  width: 150px;
+  height: 30px;
+  background-color: rgb(168, 3, 3);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}

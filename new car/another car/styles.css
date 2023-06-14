@@ -1,0 +1,353 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+  font-family: "Roboto", sans-serif;
+  scroll-behavior: smooth;
+}
+body {
+  background-color: #d3d3d3;
+}
+/* topnav bar */
+.nav-wrapper {
+  overflow: hidden;
+  top: 0;
+  position: fixed;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #274472;
+  z-index: 99;
+}
+
+/* for image */
+.comlogo {
+  width: 5rem;
+  border-radius: 50%;
+  padding: 5px 5px;
+  margin-left: 5rem;
+}
+
+/* for links */
+.nav-links {
+  width: 100%;
+  margin: 0 3.5rem;
+}
+.nav-links ul {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+.anc {
+  padding: 10px 15px;
+  background-color: #fff;
+  text-decoration: none;
+  list-style: none;
+  color: #7b3f00;
+  font-weight: bold;
+  font-size: 18px;
+  border-radius: 20px;
+  border: none;
+}
+.anc:hover {
+  color: #000;
+  background-color: #fff;
+  box-shadow: 1px 1.5px 0.5px #fff;
+}
+
+/* login/signup */
+.user-log-sign {
+  display: flex;
+  justify-content: space-between;
+  width: 10rem;
+  padding: 0 10px;
+}
+.user-img {
+  width: 1.8rem;
+}
+.log-anc {
+  text-decoration: none;
+  list-style: none;
+  color: white;
+  font-weight: bold;
+  font-size: 14px;
+}
+/* for arrow */
+.gtt {
+  background-color: #fff;
+  position: fixed;
+  bottom: 0%;
+  right: 0%;
+  margin: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  width: 4rem;
+  height: 4rem;
+}
+.uparrow {
+  width: 2rem;
+  border-radius: 50%;
+}
+
+/* section starts */
+.sec-container {
+  margin-top: 110px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-left: 50px;
+}
+.top-left {
+  width: 600px;
+  height: 360px;
+  margin: 15px 0px;
+  margin-left: 100px;
+  cursor: pointer;
+  background-image: url(images/bugati.jpg);
+  background-repeat: no-repeat;
+  background-position-x: rigth;
+  background-position-y: 50%;
+  color: #fff;
+  font-style: italic;
+  padding: 30px;
+  line-height: 30px;
+  padding-top: 200px;
+}
+.top-left:hover {
+  box-shadow: 4px 4px 8px #fff;
+  transform: scale(1.125);
+  transition-duration: 1.5s;
+}
+.exp-btn {
+  width: 120px;
+  height: 30px;
+  border-radius: 50px;
+  border: none;
+  background-color: #1863d6;
+  color: #fff;
+  font-size: 16px;
+  font-style: italic;
+  cursor: pointer;
+}
+.top-right {
+  width: 600px;
+  height: 360px;
+  margin: 15px 0;
+  margin-right: 100px;
+  cursor: pointer;
+  background-image: url(images/accessories.jpg);
+  background-repeat: no-repeat;
+  background-position-x: rigth;
+  background-position-y: 50%;
+  color: #fff;
+  font-style: italic;
+  padding: 30px;
+  line-height: 30px;
+  padding-top: 200px;
+}
+.top-right:hover {
+  box-shadow: 4px 4px 8px #fff;
+  transform: scale(1.125);
+  transition-duration: 1.5s;
+}
+.bot-left {
+  width: 600px;
+  height: 360px;
+  margin: 15px 0px;
+  margin-left: 100px;
+  cursor: pointer;
+  background-image: url(images/carwash.jpg);
+  background-position-y: bottom;
+  color: #fff;
+  font-style: italic;
+  padding: 30px;
+  line-height: 30px;
+  padding-top: 200px;
+}
+.bot-left:hover {
+  box-shadow: 4px 4px 8px #fff;
+  transform: scale(1.125);
+  transition-duration: 1.5s;
+}
+.bot-right {
+  width: 600px;
+  height: 360px;
+  cursor: pointer;
+  margin: 15px 0px;
+  margin-right: 100px;
+  font-style: italic;
+  padding: 30px;
+  line-height: 30px;
+  padding-top: 200px;
+  background-image: url(images/customercare.jpg);
+}
+.bot-right:hover {
+  box-shadow: 4px 4px 8px #fff;
+  transform: scale(1.125);
+  transition-duration: 1.5s;
+}
+/* footer  */
+.soc-icons {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.contact-details {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 40px 40px;
+  font-size: 16px;
+}
+.soc-icons {
+  width: 150px;
+  display: flex;
+  justify-content: space-between;
+}
+.email-sub {
+  font-size: 14px;
+}
+.em-input {
+  margin: 20px 10px;
+  width: 20rem;
+  height: 2.6rem;
+  border: none;
+  border-radius: 20px;
+  text-indent: 2rem;
+}
+.em-input::placeholder {
+  font-size: 18px;
+  font-weight: bold;
+}
+.sub-btn {
+  width: 5rem;
+  height: 2.5rem;
+  border: none;
+  border-radius: 20px;
+  background-color: #274472;
+  color: #fff;
+  font-size: 18px;
+  cursor: pointer;
+}
+.sub-btn:hover {
+  opacity: 0.7;
+  box-shadow: 4px 4px 8px #000;
+}
+/* for login page */
+.login-body-main {
+  display: flex;
+  justify-content: space-between;
+  background-color: #e3dede;
+}
+
+.log-txt,
+.register-txt {
+  background-color: #274472;
+  color: #fff;
+  width: 15rem;
+  height: 2.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 35px;
+  margin: 95px 240px;
+  cursor: pointer;
+}
+.log-txt:hover,
+.register-txt:hover {
+  opacity: 0.7;
+  box-shadow: 4px 4px 8px #000;
+}
+.log-txt:active,
+.register-txt:active {
+  opacity: 1;
+}
+.log-hidden,
+.reg-hidden {
+  display: flex;
+  flex-direction: column;
+  width: 20rem;
+  height: 20rem;
+  align-items: center;
+  justify-content: center;
+  margin-left: 200px;
+  border-radius: 25px;
+  visibility: hidden;
+  transform: scale(0.5);
+}
+.log-play {
+  animation: load 0.5s linear forwards;
+}
+.log-inputs {
+  width: 13rem;
+  height: 2rem;
+  text-indent: 2rem;
+  border: none;
+  border-radius: 20px;
+  margin: 8px 50px;
+}
+.log-btns {
+  width: 4.5rem;
+  height: 2rem;
+  border: none;
+  border-radius: 20px;
+  margin-top: 5px;
+  background-color: #fff;
+  color: #000;
+  cursor: pointer;
+}
+.log-btns:hover {
+  background-color: #274472;
+  color: #fff;
+}
+
+@keyframes load {
+  0% {
+    border: none;
+  }
+  20% {
+    border-top: 1px solid #274472;
+  }
+  40% {
+    border-right: 1px solid #274472;
+  }
+  60% {
+    border-bottom: 1px solid #274472;
+  }
+  80% {
+    border-left: 1px solid #274472;
+    visibility: visible;
+    transform: scale(1);
+  }
+  100% {
+    border: none;
+    box-shadow: 0px 0px 20px #274472;
+    visibility: visible;
+    transform: scale(1.125);
+  }
+}
+.middle-line {
+  width: 10px;
+  border-left: 3px solid #274472;
+  height: 100vh;
+}
+.back {
+  background-color: #fff;
+  width: 4rem;
+  height: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  top: 0;
+  position: fixed;
+  margin: 10px;
+}
+.back-arrow {
+  width: 1.5rem;
+}

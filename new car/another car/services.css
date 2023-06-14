@@ -1,0 +1,38 @@
+.serv-container {
+  margin: 175px;
+}
+.gridp {
+  display: grid;
+  grid-template-columns: repeat(3, 450px);
+}
+.foot-content {
+  margin-top: 55px;
+}
+.serv-back {
+  width: 100%;
+  height: 420px;
+  opacity: 0.7;
+}
+.droplet {
+  width: 5rem;
+}
+.msg {
+  margin-top: 25px;
+  max-width: 150px;
+}
+.oilchange {
+  display: flex;
+  justify-content: space-between;
+  max-width: 280px;
+}
+.knowbtn {
+  width: 6rem;
+  height: 2rem;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+}
+.knowbtn:hover {
+  opacity: 0.7;
+  box-shadow: 4px 4px 8px #fff;
+}

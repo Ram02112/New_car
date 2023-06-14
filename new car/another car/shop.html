@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cars-Website</title>
+    <link rel="icon" href="images/webicon.jpg" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="shop.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <div class="page-1-main-container" id="top">
+      <header id="Head">
+        <nav>
+          <div class="nav-wrapper">
+            <div class="logo-container">
+              <img src="images/comlogo.jpg" alt="" class="comlogo" />
+            </div>
+            <div class="nav-links">
+              <ul>
+                <li><a href="index.html" class="anc">HOME</a></li>
+                <li><a href="about.html" class="anc">ABOUT</a></li>
+                <li><a href="contact.html" class="anc">CONTACT</a></li>
+                <li><a href="services.html" class="anc">SERVICES</a></li>
+                <li><a href="shop.html" class="anc">SHOP</a></li>
+              </ul>
+            </div>
+            <div class="user-log-sign">
+              <img src="images/user-solid.svg" alt="" class="user-img" />
+              <div>
+                <a href="login.html" class="log-anc">LOGIN</a>
+                <h5 style="color: white; text-align: center">or</h5>
+                <a href="login.html" class="log-anc">SIGNUP</a>
+              </div>
+            </div>
+          </div>
+          <a href="#Head">
+            <div class="gtt">
+              <img src="images/arrow-up-solid.svg" alt="" class="uparrow" />
+            </div>
+          </a>
+        </nav>
+      </header>
+      <section>
+        <div id="arm-main">
+          <a href="index.html" class="tata-home">Back To Store</a>
+          <div id="shop-site">
+            <h1 id="shop-head">SHOP</h1>
+            <div id="top-shopcart" onclick="shopCart()">
+              <i class="fa fa-shopping-cart" id="cart-img"></i>
+              <p id="shop-items">0</p>
+            </div>
+          </div>
+
+          <div id="parentShop" class="parent-shop"></div>
+        </div>
+        <script src="data.js"></script>
+        <script src="shop.js"></script>
+      </section>
+    </div>
+  </body>
+</html>

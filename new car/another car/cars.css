@@ -1,0 +1,38 @@
+body {
+  background-color: #fff;
+}
+.car_img {
+  width: 350px;
+  height: 200px;
+}
+#display_cars {
+  margin-top: 150px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.car_display {
+  width: 600px;
+  border: 1px solid #000;
+  display: flex;
+  line-height: 40px;
+  font-style: oblique;
+  margin: 10px;
+}
+.car_content {
+  margin-left: 25px;
+}
+.call-back {
+  width: 150px;
+  height: 35px;
+  border: none;
+  border-radius: 50px;
+  background-color: #274472;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+}
+.call-back:hover {
+  opacity: 0.7;
+  box-shadow: 2px 2px 6px 2px #000;
+}

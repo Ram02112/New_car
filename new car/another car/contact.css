@@ -1,0 +1,89 @@
+.contact-us,
+.ticket {
+  margin: 120px;
+  line-height: 35px;
+  padding: 25px;
+}
+
+.headset {
+  width: 9rem;
+  margin: 15px;
+}
+.contact-details-con {
+  display: flex;
+  justify-content: space-evenly;
+}
+.issue-btn {
+  width: 15rem;
+  height: 3rem;
+  border: none;
+  border-radius: 12px;
+  margin: 25px 0;
+  cursor: pointer;
+}
+.issue-btn:hover {
+  opacity: 0.7;
+  box-shadow: 4px 4px 8px #fff;
+}
+.support-pop-up {
+  background-color: #fff;
+  width: 20rem;
+  height: 15rem;
+  line-height: 35px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-radius: 20px;
+  transform: translate(190%, -200%) scale(0.2);
+  visibility: hidden;
+  transition: transform 0.5s;
+}
+.support-pop-open {
+  visibility: visible;
+  transform: scale(1);
+  transform: translate(190%, -200%);
+}
+.cross-ani {
+  width: 4rem;
+  height: 4rem;
+  background-color: #ff0000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-radius: 50%;
+  transform: scale(0.5);
+  animation: pulse 1s linear infinite;
+  margin: 10px;
+}
+.cross-mark {
+  width: 2rem;
+}
+.close-pop-btn {
+  background-color: #274472;
+  width: 5rem;
+  height: 3rem;
+  margin: 5px;
+  border: none;
+  border-radius: 20px;
+  color: #fff;
+  cursor: pointer;
+}
+.close-pop-btn:hover {
+  opacity: 0.7;
+  box-shadow: 4px 4px 8px #274472;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(0.5);
+  }
+  50% {
+    transform: scale(0.9);
+  }
+  100% {
+    transform: scale(0.5);
+  }
+}
